@@ -38,7 +38,7 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_ResourceGroupName"></a> [ResourceGroupName](#input\_ResourceGroupName) | Name of the ResourceGroup to deploy into. | `string` | n/a | yes |
 | <a name="input_name"></a> [name](#input\_name) | Name of the Automation Account. | `string` | n/a | yes |
-| <a name="input_tags"></a> [tags](#input\_tags) | Tags to add to the Automation Account. | `object` | n/a | yes |
+| <a name="input_tags"></a> [tags](#input\_tags) | Tags to add to the Automation Account. | `object` | `{}` | no |
 
 ## Outputs
 
