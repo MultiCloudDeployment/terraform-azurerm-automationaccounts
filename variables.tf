@@ -10,5 +10,6 @@ variable "name" {
 
 variable "tags" {
  type         = object
- description = "Tags to add to the Automation Account."
+ default      = {}
+ description  = "Tags to add to the Automation Account."
 }
