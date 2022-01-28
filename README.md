@@ -36,13 +36,13 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_ResourceGroupName"></a> [ResourceGroupName](#input\_ResourceGroupName) | n/a | `string` | n/a | yes |
-| <a name="input_name"></a> [name](#input\_name) | n/a | `string` | n/a | yes |
-| <a name="input_tags"></a> [tags](#input\_tags) | n/a | `object` | n/a | yes |
+| <a name="input_ResourceGroupName"></a> [ResourceGroupName](#input\_ResourceGroupName) | Name of the ResourceGroup to deploy into. | `string` | n/a | yes |
+| <a name="input_name"></a> [name](#input\_name) | Name of the Automation Account. | `string` | n/a | yes |
+| <a name="input_tags"></a> [tags](#input\_tags) | Tags to add to the Automation Account. | `object` | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| <a name="output_exports"></a> [exports](#output\_exports) | n/a |
+| <a name="output_exports"></a> [exports](#output\_exports) | Return the Automation Account details. |
 <!-- END_TF_DOCS -->
