@@ -11,16 +11,15 @@ provider "azurerm" {
   # Configuration options
 }
 
-data "azurerm_resource_group" "rsg" {
-  name = var.ResourceGroupName
-}
+resource "azurerm_automation_account" "automation-account" {
+  name                  = var.name
+  location              = var.location
+  resource_group_name   = var.resourceGroup
 
-resource "azurerm_automation_account" "aa" {
-  name                = var.name
-  location            = data.azurerm_resource_group.rsg.location
-  resource_group_name = data.azurerm_resource_group.rsg.name
-
-  sku_name = "Basic"
+  sku_name              = var.skuName
+  
+  disable_local_auth    = var.disableLocalAuth
+  public_network_access = var.publicNetworkAccess
 
   tags = var.tags
 }
